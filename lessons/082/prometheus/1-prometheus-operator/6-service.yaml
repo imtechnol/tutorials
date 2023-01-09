@@ -7,10 +7,11 @@ metadata:
   name: prometheus-operator
   namespace: monitoring
 spec:
-  clusterIP: None
+  clusterIP: Yes
   ports:
   - name: http
     port: 8080
     targetPort: http
   selector:
     app.kubernetes.io/name: prometheus-operator
+    
